@@ -227,7 +227,7 @@ header{
 /* Home Design */
 .home{
     margin-top: 1rem;
-    background: url(images/home.png);
+    background: url(images/heidi-alp2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -240,7 +240,7 @@ header{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
-    margin-left: 15px;
+    margin-left: 780px;
     background: var(--second-color);
     border-radius: 1rem;
     background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.5)); color: white;
@@ -332,7 +332,7 @@ header{
 .properties-container .box{
     /* background: var(--bg-color); */
     background-image: url(images/background/paint-paper.png);
-
+    
     padding: 10px;
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
@@ -348,6 +348,10 @@ header{
     object-fit: cover;
     object-position: center;
 }
+.properties-container .box a {
+    text-decoration: none;
+    color: var(--second-color);
+  }
 .properties-container .box h3{
     font-size: 1rem;
     font-weight: 600;
@@ -584,6 +588,9 @@ header{
     }
     #menu:checked ~ .navbar{
         clip-path: circle(144% at 100% 1%);
+    }
+    .home-text{
+        margin-left: 0;
     }
     .about-text span{
         font-size: 0.9rem;
