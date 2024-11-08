@@ -240,7 +240,7 @@ header{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
-    margin-left: 780px;
+    margin-left: 15px;
     background: var(--second-color);
     border-radius: 1rem;
     background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.5)); color: white;
@@ -588,9 +588,6 @@ header{
     }
     #menu:checked ~ .navbar{
         clip-path: circle(144% at 100% 1%);
-    }
-    .home-text{
-        margin-left: 0;
     }
     .about-text span{
         font-size: 0.9rem;
