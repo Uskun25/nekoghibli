@@ -47,10 +47,10 @@ const sr = ScrollReveal({
     reset: true
 })
 
-// sr.reveal
+sr.reveal('.slider',{})
 
 sr.reveal('.home',{})
-sr.reveal('.home-text',{delay:500});
+sr.reveal('.home-text',{delay:500})
 
 sr.reveal ('.about-img',{})
 sr.reveal ('.heading',{})
