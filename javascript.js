@@ -47,20 +47,20 @@ const sr = ScrollReveal({
     reset: true
 })
 
-sr.reveal ('.home-text',{})
-sr.reveal ('.home-img',{})
+// sr.reveal
+
+sr.reveal('.home',{})
+sr.reveal('.home-text',{delay:500});
 
 sr.reveal ('.about-img',{})
-// sr.reveal ('.heading',{})
-sr.reveal ('.about-text',{delay:200})
+sr.reveal ('.heading',{})
+sr.reveal ('.about-text',{delay:500})
 
-sr.reveal ('.sales',{})
+sr.reveal ('.featured',{})
 
-// sr.reveal ('.work-text',{})
-// sr.reveal ('.work-img',{delay:200})
+sr.reveal ('.movies-container',{})
 
-// sr.reveal ('.app h1',{})
-// sr.reveal ('.app',{delay:200})
+sr.reveal ('.newsletter h2',{})
+sr.reveal ('.newsletter ',{delay:200})
 
-// sr.reveal ('form input',{})
-// sr.reveal ('form textarea',{})
+sr.reveal ('copyright p',{})
