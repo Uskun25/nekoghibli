@@ -386,7 +386,7 @@ header{
     background-color: #fff;
     height: 80px;
     width: 80px;
-    top: calc(50% - 150px);
+    top: calc(50% - 180px);
     left: calc(50% - 40px);
     border-radius: 50%;
     transition: all 0.3s;
