@@ -1,3 +1,4 @@
+// #region variables
 let list = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
 let dots = document.querySelectorAll('.slider .dots li');
@@ -7,24 +8,28 @@ let next = document.getElementById('next');
 let active = 0;
 let lengthItems = items.length - 1;
 
-next.onclick = function(){
-    if(active + 1 > lengthItems){
+let refreshSlider = setInterval(() => { next.click() }, 3000)
+// #endregion
+
+// #region codes
+// #region image-slider
+next.onclick = function () {
+    if (active + 1 > lengthItems) {
         active = 0;
-    }else{
+    } else {
         active = active + 1;
     }
     reloadSlider();
 }
-prev.onclick = function(){
-    if(active - 1 < 0){
+prev.onclick = function () {
+    if (active - 1 < 0) {
         active = lengthItems;
-    }else{
+    } else {
         active = active - 1;
     }
-    reloadSlider(); 
+    reloadSlider();
 }
-let refreshSlider = setInterval(()=> {next.click()}, 3000)
-function reloadSlider(){ 
+function reloadSlider() {
     let checkLeft = items[active].offsetLeft;
     list.style.left = -checkLeft + 'px';
 
@@ -33,13 +38,14 @@ function reloadSlider(){
     dots[active].classList.add('active');
 }
 dots.forEach((li, key) => {
-    li.addEventListener('click', function(){
+    li.addEventListener('click', function () {
         active = key;
         reloadSlider();
     })
 })
+// #endregion
 
-// Scroll Animation
+// #region scroll-animation
 const sr = ScrollReveal({
     origin: 'top',
     distance: '85px',
@@ -47,20 +53,22 @@ const sr = ScrollReveal({
     reset: true
 })
 
-sr.reveal('.slider',{})
+sr.reveal('.slider', {})
 
-sr.reveal('.home',{})
-sr.reveal('.home-text',{delay:500})
+sr.reveal('.home', {})
+sr.reveal('.home-text', { delay: 500 })
 
-sr.reveal ('.about-img',{})
-sr.reveal ('.heading',{})
-sr.reveal ('.about-text',{delay:500})
+sr.reveal('.about-img', {})
+sr.reveal('.heading', {})
+sr.reveal('.about-text', { delay: 500 })
 
-sr.reveal ('.featured',{})
+sr.reveal('.featured', {})
 
-sr.reveal ('.movies-container',{})
+sr.reveal('.movies-container', {})
 
-sr.reveal ('.newsletter h2',{})
-sr.reveal ('.newsletter ',{delay:200})
+sr.reveal('.newsletter h2', {})
+sr.reveal('.newsletter ', { delay: 200 })
 
-sr.reveal ('copyright p',{})
+sr.reveal('copyright', {})
+// #endregion
+// #endregion
