@@ -207,7 +207,7 @@ header {
     background-image: url(images/background/brown-paper.png);
 }
 
-.logo {
+/* .logo {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
@@ -221,6 +221,15 @@ header {
     font-size: 24px;
     color: var(--main-color);
     margin-left: 10px;
+} */
+
+.logo img.logo-img {
+    width: 110px;
+    height: auto;
+    margin-left: 8px;
+    /* Space between image and text */
+    display: inline-block;
+    vertical-align: top;
 }
 
 .navbar {
